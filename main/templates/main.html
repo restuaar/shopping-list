@@ -29,19 +29,12 @@
               Edit
           </button>
       </a>
-    </td>
-    <td>
-      <a href="{% url 'main:edit_product' product.pk %}">
-          <button>
-              Edit
-          </button>
-      </a>
       <a href="{% url 'main:delete_product' product.pk %}">
             <button>
                 Delete
             </button>
         </a>
-  </td>
+    </td>
   </tr>
   {% endfor %}
 </table>
