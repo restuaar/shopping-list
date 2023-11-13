@@ -1,6 +1,6 @@
 import datetime
 
-from django.http import HttpResponseNotFound, HttpResponseRedirect, HttpResponse
+from django.http import HttpResponseNotFound, HttpResponseRedirect, HttpResponse, JsonResponse
 from django.urls import reverse
 from django.shortcuts import render, redirect
 from django.core import serializers
@@ -14,7 +14,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
 from django.views.decorators.csrf import csrf_exempt
-
 
 def get_product_json(request):
     product_item = Product.objects.all()
